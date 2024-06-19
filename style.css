@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins , sans-serif;
+}
+.custom-placeholder::placeholder {
+    color: var(--Red); /* Replace 'red' with the color you want */
+}
+
+:root{
+    
+/* ## Colors */
+
+/* ### Primary */
+
+--Red: hsl(0, 100%, 74%); 
+--Green: hsl(154, 59%, 51%);
+
+/* ### Accent */
+
+--Blue: hsl(248, 32%, 49%);
+
+/* ### Neutral */
+
+
+--Dark-Blue: hsl(249, 10%, 26%);
+--Dark-Blue-a: hsla(249, 10%, 26%, 0.262);
+--Grayish-Blue: hsl(246, 25%, 77%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url(./images/bg-intro-desktop.png),var(--Red);
+}
+.outercontainer{
+    max-width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innercontainer{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+} 
+.container1{
+    /* background-color: #0204054f; */
+  padding: 1.5rem;
+    
+}
+.container2{
+    /* background-color: #6eb7cb4f; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.heading{
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+.para{
+
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.text{
+    background-color: var(--Blue);
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 0 7px 5px 2px var(--Dark-Blue-a);
+   padding: 1rem;
+   padding-inline: auto;
+   width: 85%;
+   text-align: center;
+}
+.text{
+    font-weight: 600;
+}
+.text span{
+    font-weight: 
+    400;
+    color: var(--Grayish-Blue);
+
+}
+form{
+    border-radius: 10px;
+    padding-block: 2.5rem;
+    width: 85%;
+    height: auto;
+    background-color: white;
+    display: inherit;
+    flex-direction: column;
+    row-gap: 0.7rem;
+    align-items: center;
+}
+input{
+    width: 85%;
+    padding:1rem 1.5rem;
+    border-radius: 5px;
+    border:2px solid  var(--Grayish-Blue);
+    color: var(--Dark-Blue);
+    font-weight: 600;
+}
+button{
+    width: 85%;
+    padding-block:01rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: inset 0 -3px 5px 2px var(--Dark-Blue-a);
+    border: none;
+    outline: none;
+    background-color: var(--Green);
+}
+button:hover{
+    cursor: pointer ;
+    background-color:hsla(154, 59%, 51%, 0.686)    ;
+}
+.LastLine{
+font-size: 0.65rem;
+color: var(--Grayish-Blue);
+
+}
+.LastLine span{
+    color:var(--Red);
+    font-weight: 600;
+}
+.error{
+    border-color: var(--Red);
+   
+}
+.errorlogo{
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position-x:90% ;
+    background-position-y:50% ;
+}
+.print{
+    width: 80%;
+    display: block;
+    padding-inline: 1rem;
+    font-size: 0.7rem;
+    text-align: end;
+    color: var(--Red);
+}
+.disp{
+    display: none;
+}
+@media screen and (max-width:700px) {
+    body{
+        position: relative;
+    }
+    .outercontainer{
+        flex-direction:column;
+        height: auto;
+        position: absolute;
+        top: 20px;
+    }
+    .container1{
+        padding-block:2rem;
+        height: auto;
+    }
+    .innercontainer{
+        width: 100%;
+        height: auto;
+    }
+    .heading{
+        margin-top: 10%;
+        font-size: 1.6rem;
+    }
+    .para{
+        text-align: center;
+        padding-inline: auto;
+    }
+}   .LastLine{
+    padding-inline: 18px;
+    font-size: 0.7rem;
+    text-align: center;
+}
